@@ -1,0 +1,9 @@
+hosts: 172.31.26.114
+  tasks:
+    - maven_artifact:
+      group_id: test
+      artifact_id: simple-maven-project-with-tests
+      repository_url: 'http://3.145.116.83:10680/repository/maven_snapshot_jar/'
+      username: admin
+      password: %3LtkGBH@8*eXdJ@
+      dest: /root/ansible
