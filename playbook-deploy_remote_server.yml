@@ -1,0 +1,8 @@
+name: Deployment to Target Host
+  hosts: Target_Node1 //Target machine with the naming
+  tasks:
+    - name: copying file with playbook
+      become: true 
+      copy:
+        src: /root/ansible/*.jar                          // Ansible server nexus repo downloaded
+        dest: /var/lib/docker/volumes/ansible/_data      //Docker Container Volume
