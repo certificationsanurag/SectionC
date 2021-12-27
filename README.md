@@ -8,3 +8,9 @@ To Deploy the application on Container, mounted the Volume on docker container s
 As I was unable to publish the code to Nexus repo, so cannot fetch or pull the artifact(attaching the playbook to pull the nexus repo code)
 Pulling the empty nexus repository(attaching the playbook to deploy the applcition on Docker volume)
 
+Commands to be executed for running ansible playbook
+
+ansible Target_Node1 -m ping   // to ping the target 
+ansible-playbook playbook_name.yml 
+Once deployment done, verify the container volume
+
